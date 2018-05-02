@@ -1,0 +1,22 @@
+﻿<Window x:Class="TaskManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="240*"/>
+            <RowDefinition Height="80*"/>
+        </Grid.RowDefinitions>
+        <ListBox Grid.ColumnSpan="3" Name="listBox"/>
+        <Button Name="killButton" Content="Kill" FontSize="26" Grid.Column="1" Grid.Row="1" Click="KillButtonClick"/>
+    </Grid>
+</Window>
